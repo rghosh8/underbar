@@ -433,6 +433,7 @@
         // or _.once) that keeps track of interesting information about the function it's spying on;
         // e.g. whether or not the function has been called.
         var spy = sinon.spy(function() { return 'Dummy output'; });
+        console.log("rajat", spy)
         var memoSpy = _.memoize(spy);
 
         memoSpy(10);
